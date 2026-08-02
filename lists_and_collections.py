@@ -211,7 +211,7 @@ my_friends_info = {
     'Nick': { # one key: Nick, one value: his dictionary
         'age': 41,
         'city': 'Boulder',
-        "hobbies" : ['skiing','cooking']
+        'hobbies' : ['skiing','cooking']
     }, 
     'Sam': {
         'age': 35,
@@ -220,3 +220,22 @@ my_friends_info = {
         'job': 'professor'
     }
 }
+my_friends_info['Nick']['age'] # now you just get 41
+# lets get sams hobbies
+my_friends_info['Sam']['hobbies']
+# what if your not sure if you have info about a friends job?
+my_friends_info['Nick'].get('job') # we get nothing because no such keyword in the dict
+my_friends_info['Sam'].get('job') # we get professor for Sam
+# sam recently picked up bird watching
+my_friends_info['Sam']['hobbies'].append('Bird watching')
+my_friends_info # boom its modified because we can change lists
+
+# Lists are ORDERED collections of elements of any kind.
+# we manipulate lists using INDEXING OR SLICING ot access  and modify the elements that they contain
+# we can also use methods like .pop(), .append(), or .insert() to do that.
+
+# Dictionaries are UNORDERED collections of key:value pairs
+# we access the values by their key
+# we manipulate dictionaries using INDEXING to access and modify the values associated with given keys
+
+my_friends_info[0] # nothing, no key called 0

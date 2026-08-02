@@ -13,6 +13,7 @@
 #mets take print(): 
 print("1234") # it is going to print "1234"
 my_content = print("1234")
+
 my_content # this is empty. print("1234") did not store anything in it
 # why? 
 
@@ -79,6 +80,9 @@ print(yo_mama)
 # if you try to add anything after a return statment, it will not do anything
 
 print("hello")
+print(12)
+
+
 
 
 
